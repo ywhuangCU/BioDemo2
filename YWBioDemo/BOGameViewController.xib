@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BOGameViewController">
+            <connections>
+                <outlet property="BackgroundImageView" destination="hRM-ZX-IUZ" id="Pr9-wQ-Y0N"/>
+                <outlet property="bioImageCanvas" destination="x56-pX-hRM" id="5wa-1o-EWf"/>
+                <outlet property="debugInfoLabel" destination="TSp-CX-MaG" id="k9r-uS-yzk"/>
+                <outlet property="hiddenButtonOnNib" destination="20V-vG-Qk0" id="xYj-Jz-9fy"/>
+                <outlet property="questionTop" destination="xHC-Bp-xrm" id="Po9-HU-VLM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x56-pX-hRM" userLabel="ImageContainer">
+                    <rect key="frame" x="0.0" y="75" width="600" height="450"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hRM-ZX-IUZ" userLabel="Background">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+                        </imageView>
+                        <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAB-sw-IAl" userLabel="Button4" customClass="OBShapedButton">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="300" id="0hN-F8-gt5"/>
+                                <constraint firstAttribute="width" constant="300" id="I55-gY-5Tm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="03-plasma-membrane_1-normal.png">
+                                <color key="titleColor" red="0.19607843" green="0.30980393000000001" blue="0.52156866000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="03-plasma-membrane_1-highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="0hN-F8-gt5"/>
+                                    <exclude reference="I55-gY-5Tm"/>
+                                </mask>
+                            </variation>
+                        </button>
+                        <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEv-Yf-uuo" userLabel="Button3" customClass="OBShapedButton">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="04-protein-cross-linking-outer-doublets_1-normal.png">
+                                <color key="titleColor" red="0.19607843" green="0.30980393000000001" blue="0.52156866000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="04-protein-cross_1-highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHd-dR-gLl" userLabel="Button2" customClass="OBShapedButton">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="01-outer-microtubule_1-normal.png">
+                                <color key="titleColor" red="0.19607843" green="0.30980393000000001" blue="0.52156866000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="01-outer-microtubule_1-highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSO-77-2n6" userLabel="Button1" customClass="OBShapedButton">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="02-central-microtubule_1-normal.png">
+                                <color key="titleColor" red="0.19607843" green="0.30980393000000001" blue="0.52156866000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="02-central-microtubule_1-highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20V-vG-Qk0" userLabel="HiddenButton" customClass="YWHiddenButton">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="KEt-aS-Mv0"/>
+                                <constraint firstAttribute="height" constant="300" id="dP6-4X-Vg3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                            <state key="normal" image="02-central-microtubule_1-potato.png">
+                                <color key="titleColor" red="0.19607843" green="0.30980393000000001" blue="0.52156866000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="02-central-microtubule_1-highlighted.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="KEt-aS-Mv0"/>
+                                    <exclude reference="dP6-4X-Vg3"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="hiddenButtonOnNibHit:" destination="-1" eventType="touchUpInside" id="PBs-Mt-TgN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="wHd-dR-gLl" firstAttribute="bottom" secondItem="dAB-sw-IAl" secondAttribute="bottom" id="2sZ-wo-8MD"/>
+                        <constraint firstItem="wHd-dR-gLl" firstAttribute="top" secondItem="dAB-sw-IAl" secondAttribute="top" id="3yl-Co-rWA"/>
+                        <constraint firstItem="20V-vG-Qk0" firstAttribute="centerY" secondItem="x56-pX-hRM" secondAttribute="centerY" id="5Sg-ct-qUf"/>
+                        <constraint firstItem="dAB-sw-IAl" firstAttribute="centerX" secondItem="x56-pX-hRM" secondAttribute="centerX" id="8D8-V2-jL4"/>
+                        <constraint firstItem="GSO-77-2n6" firstAttribute="bottom" secondItem="dAB-sw-IAl" secondAttribute="bottom" id="BJu-xK-P8T"/>
+                        <constraint firstItem="hRM-ZX-IUZ" firstAttribute="top" secondItem="x56-pX-hRM" secondAttribute="top" id="BPe-um-rZd"/>
+                        <constraint firstItem="20V-vG-Qk0" firstAttribute="centerY" secondItem="x56-pX-hRM" secondAttribute="centerY" id="C6w-Gc-muv"/>
+                        <constraint firstItem="GSO-77-2n6" firstAttribute="trailing" secondItem="dAB-sw-IAl" secondAttribute="trailing" id="E9P-5z-2Ta"/>
+                        <constraint firstItem="GSO-77-2n6" firstAttribute="top" secondItem="dAB-sw-IAl" secondAttribute="top" id="J5Q-rf-e0j"/>
+                        <constraint firstItem="20V-vG-Qk0" firstAttribute="centerX" secondItem="x56-pX-hRM" secondAttribute="centerX" id="JhT-wl-M7i"/>
+                        <constraint firstItem="wHd-dR-gLl" firstAttribute="trailing" secondItem="dAB-sw-IAl" secondAttribute="trailing" id="MsZ-7T-VzA"/>
+                        <constraint firstItem="dAB-sw-IAl" firstAttribute="leading" secondItem="x56-pX-hRM" secondAttribute="leading" id="OTv-X1-Wvy"/>
+                        <constraint firstAttribute="trailing" secondItem="20V-vG-Qk0" secondAttribute="trailing" id="OnO-8M-4n2"/>
+                        <constraint firstItem="eEv-Yf-uuo" firstAttribute="trailing" secondItem="dAB-sw-IAl" secondAttribute="trailing" id="QmB-iW-cYU"/>
+                        <constraint firstItem="hRM-ZX-IUZ" firstAttribute="height" secondItem="x56-pX-hRM" secondAttribute="height" id="Vjv-if-kM0"/>
+                        <constraint firstAttribute="bottom" secondItem="20V-vG-Qk0" secondAttribute="bottom" id="WCD-h0-mwt"/>
+                        <constraint firstItem="hRM-ZX-IUZ" firstAttribute="leading" secondItem="x56-pX-hRM" secondAttribute="leading" id="WMC-3c-gbZ"/>
+                        <constraint firstItem="20V-vG-Qk0" firstAttribute="top" secondItem="x56-pX-hRM" secondAttribute="top" id="Y0e-ee-W8j"/>
+                        <constraint firstItem="GSO-77-2n6" firstAttribute="leading" secondItem="dAB-sw-IAl" secondAttribute="leading" id="aAU-Xl-h9v"/>
+                        <constraint firstItem="eEv-Yf-uuo" firstAttribute="leading" secondItem="dAB-sw-IAl" secondAttribute="leading" id="arK-cc-BRF"/>
+                        <constraint firstItem="eEv-Yf-uuo" firstAttribute="bottom" secondItem="dAB-sw-IAl" secondAttribute="bottom" id="c8R-te-74V"/>
+                        <constraint firstItem="eEv-Yf-uuo" firstAttribute="top" secondItem="dAB-sw-IAl" secondAttribute="top" id="cbK-j2-xCo"/>
+                        <constraint firstItem="wHd-dR-gLl" firstAttribute="leading" secondItem="dAB-sw-IAl" secondAttribute="leading" id="e0c-wB-TCp"/>
+                        <constraint firstItem="hRM-ZX-IUZ" firstAttribute="width" secondItem="x56-pX-hRM" secondAttribute="width" id="e76-Rn-qud"/>
+                        <constraint firstAttribute="bottom" secondItem="dAB-sw-IAl" secondAttribute="bottom" id="edz-uM-Cjx"/>
+                        <constraint firstAttribute="width" constant="512" id="hb5-3S-SzA"/>
+                        <constraint firstAttribute="width" constant="768" id="hdh-pb-0WY"/>
+                        <constraint firstItem="dAB-sw-IAl" firstAttribute="centerY" secondItem="x56-pX-hRM" secondAttribute="centerY" id="mc7-Ol-ubZ"/>
+                        <constraint firstAttribute="height" constant="512" id="omb-go-daI"/>
+                        <constraint firstItem="20V-vG-Qk0" firstAttribute="leading" secondItem="x56-pX-hRM" secondAttribute="leading" id="sfl-sI-L9O"/>
+                        <constraint firstAttribute="trailing" secondItem="dAB-sw-IAl" secondAttribute="trailing" id="tix-KN-1gZ"/>
+                        <constraint firstItem="20V-vG-Qk0" firstAttribute="centerX" secondItem="x56-pX-hRM" secondAttribute="centerX" id="wu6-bX-guj"/>
+                        <constraint firstAttribute="width" secondItem="x56-pX-hRM" secondAttribute="height" multiplier="2048:1536" id="xIL-R4-wM3"/>
+                        <constraint firstItem="dAB-sw-IAl" firstAttribute="top" secondItem="x56-pX-hRM" secondAttribute="top" id="xgG-Sl-T2A"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hb5-3S-SzA"/>
+                            <exclude reference="hdh-pb-0WY"/>
+                            <exclude reference="omb-go-daI"/>
+                            <exclude reference="5Sg-ct-qUf"/>
+                            <exclude reference="JhT-wl-M7i"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuestionTop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHC-Bp-xrm">
+                    <rect key="frame" x="252" y="88" width="97" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InfoLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSp-CX-MaG">
+                    <rect key="frame" x="265" y="117" width="71" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TSp-CX-MaG" firstAttribute="top" secondItem="xHC-Bp-xrm" secondAttribute="bottom" constant="8" id="5Gx-Gy-rmz"/>
+                <constraint firstAttribute="trailing" secondItem="x56-pX-hRM" secondAttribute="trailing" constant="44" id="6bF-bg-Phv"/>
+                <constraint firstItem="TSp-CX-MaG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GL9-QC-Ahs"/>
+                <constraint firstItem="x56-pX-hRM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="M90-hb-BKU"/>
+                <constraint firstItem="x56-pX-hRM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="Nby-at-v7P"/>
+                <constraint firstItem="x56-pX-hRM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="VDh-8w-a8a"/>
+                <constraint firstItem="xHC-Bp-xrm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88" id="cYI-i8-ZdL">
+                    <variation key="heightClass=compact" constant="44"/>
+                </constraint>
+                <constraint firstItem="x56-pX-hRM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eaS-5Z-hQJ"/>
+                <constraint firstItem="xHC-Bp-xrm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kk7-QD-9XC"/>
+                <constraint firstItem="x56-pX-hRM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xhk-h8-CZ3"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="6bF-bg-Phv"/>
+                    <exclude reference="Nby-at-v7P"/>
+                    <exclude reference="VDh-8w-a8a"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="01-outer-microtubule_1-highlighted.png" width="1002" height="1000"/>
+        <image name="01-outer-microtubule_1-normal.png" width="1002" height="1000"/>
+        <image name="02-central-microtubule_1-highlighted.png" width="1001" height="1001"/>
+        <image name="02-central-microtubule_1-normal.png" width="1001" height="1001"/>
+        <image name="02-central-microtubule_1-potato.png" width="1001" height="1001"/>
+        <image name="03-plasma-membrane_1-highlighted.png" width="1001" height="1005"/>
+        <image name="03-plasma-membrane_1-normal.png" width="1001" height="1005"/>
+        <image name="04-protein-cross-linking-outer-doublets_1-normal.png" width="1001" height="1001"/>
+        <image name="04-protein-cross_1-highlighted.png" width="1001" height="1001"/>
+    </resources>
+</document>
