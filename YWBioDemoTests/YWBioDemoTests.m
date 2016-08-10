@@ -66,18 +66,18 @@
 }
 
 
-- (void)testCanvasHasPotato {
+- (void)testCanvasHasHiddenArea {
     NSArray * subviews = self.vc.bioImageCanvas.subviews;
-    XCTAssertTrue([subviews containsObject:self.vc.potatoOfNib], @"No potato found");
+    XCTAssertTrue([subviews containsObject:self.vc.hiddenButtonOnNib], @"No hidden area found");
 }
 
-- (void)testPotatoLoads {
-    XCTAssertNotNil(self.vc.potatoOfNib, @"Potato not initiated");
+- (void)testHiddenAreaLoads {
+    XCTAssertNotNil(self.vc.hiddenButtonOnNib, @"HiddenButon not initiated");
 }
 
 - (void)testPotatoHit {
-    [(UIButton *)self.vc.potatoOfNib sendActionsForControlEvents:UIControlEventTouchUpInside];
-    XCTAssertTrue(self.vc.touchInsidePotato);
+    [(UIButton *)self.vc.hiddenButtonOnNib sendActionsForControlEvents:UIControlEventTouchUpInside];
+    XCTAssertTrue(self.vc.touchInsideHiddenArea);
 }
 
 - (void)testCanvasHasMultipleViews {

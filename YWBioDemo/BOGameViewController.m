@@ -43,6 +43,7 @@
     
     //UIBarButtonItem * geoButton = [[UIBarButtonItem alloc]initWithTitle:@"GEO" style:UIBarButtonItemStylePlain target:self action:@selector(showNextVC)];
     //self.navigationItem.leftBarButtonItem = geoButton;
+    
     UIBarButtonItem * nextButton = [[UIBarButtonItem alloc]initWithTitle:@"next" style:UIBarButtonItemStylePlain target:self action:@selector(fetchNewCard)];
     self.navigationItem.rightBarButtonItem = nextButton;
     
@@ -109,6 +110,7 @@
     
     //[self initShapedButtonsWithImage];
     //[self addShapedButtonToView];
+    
     [self initShapedButtonsWithImageWithConstraints];
     
     
@@ -125,7 +127,7 @@
 }
 
 - (void)addShapedsButtonToView {
-    //Here we process from the last object in the Collection
+    //Process from the last object in the Collection to ensure z hierachy
     for (NSInteger i = self.shapedButtons.count -1 ; i >=0 ;i--) {
         
         [self.bioImageCanvas addSubview:self.shapedButtons[i]];
@@ -145,7 +147,7 @@
         
         //TODO: Need a way to ensure the vertical z hiearchy
         [self.shapedButtons addObject:aShapeButton];
-        //NSLog(@"frame:%.1f,%.1f",aShapeButton.frame.size.width,aShapeButton.frame.size.height);
+
     }
 }
 
@@ -293,14 +295,12 @@
 }
 
 - (void)showCueCorrect {
-    //self.debugInfoLabel.text = @"Right";
     
     [self paintFrameOnBackground:[UIColor greenColor]];
 
 }
 
 - (void)showCueWrong {
-    //self.debugInfoLabel.text = @"Wrong";
     
     [self paintFrameOnBackground:[UIColor redColor]];
 
@@ -381,7 +381,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 
