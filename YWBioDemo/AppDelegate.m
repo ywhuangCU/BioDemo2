@@ -21,8 +21,8 @@
 
     // Override point for customization after application launch.
     BOGameViewController * bioVC = [[BOGameViewController alloc]initWithNibName:@"BOGameViewController" bundle:nil];
-    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:bioVC];
-    self.window.rootViewController = nav;
+    //UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:bioVC];
+    self.window.rootViewController = bioVC;
     
     
     // Override point for customization after application launch.

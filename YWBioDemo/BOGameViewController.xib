@@ -88,7 +88,7 @@
                                 <constraint firstAttribute="height" constant="300" id="dP6-4X-Vg3"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                            <state key="normal" image="02-central-microtubule_1-potato.png">
+                            <state key="normal" image="02-central-microtubule_1-circle.png">
                                 <color key="titleColor" red="0.19607843" green="0.30980393000000001" blue="0.52156866000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -165,6 +165,13 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93V-e4-FHa">
+                    <rect key="frame" x="546" y="8" width="46" height="30"/>
+                    <state key="normal" title="Next"/>
+                    <connections>
+                        <action selector="nextQuestion:" destination="-1" eventType="touchUpInside" id="3xi-Lk-a5R"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -175,10 +182,12 @@
                 <constraint firstItem="x56-pX-hRM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="Nby-at-v7P"/>
                 <constraint firstItem="x56-pX-hRM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="VDh-8w-a8a"/>
                 <constraint firstItem="xHC-Bp-xrm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88" id="cYI-i8-ZdL">
-                    <variation key="heightClass=compact" constant="44"/>
+                    <variation key="heightClass=compact" constant="22"/>
                 </constraint>
+                <constraint firstAttribute="trailing" secondItem="93V-e4-FHa" secondAttribute="trailing" constant="16" id="ccI-Vh-xnh"/>
                 <constraint firstItem="x56-pX-hRM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eaS-5Z-hQJ"/>
                 <constraint firstItem="xHC-Bp-xrm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kk7-QD-9XC"/>
+                <constraint firstItem="93V-e4-FHa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="sqj-9e-1sT"/>
                 <constraint firstItem="x56-pX-hRM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xhk-h8-CZ3"/>
             </constraints>
             <variation key="default">
@@ -193,9 +202,9 @@
     <resources>
         <image name="01-outer-microtubule_1-highlighted.png" width="1002" height="1000"/>
         <image name="01-outer-microtubule_1-normal.png" width="1002" height="1000"/>
+        <image name="02-central-microtubule_1-circle.png" width="1001" height="1001"/>
         <image name="02-central-microtubule_1-highlighted.png" width="1001" height="1001"/>
         <image name="02-central-microtubule_1-normal.png" width="1001" height="1001"/>
-        <image name="02-central-microtubule_1-potato.png" width="1001" height="1001"/>
         <image name="03-plasma-membrane_1-highlighted.png" width="1001" height="1005"/>
         <image name="03-plasma-membrane_1-normal.png" width="1001" height="1005"/>
         <image name="04-protein-cross-linking-outer-doublets_1-normal.png" width="1001" height="1001"/>

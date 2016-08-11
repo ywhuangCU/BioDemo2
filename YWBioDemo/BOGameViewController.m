@@ -37,6 +37,7 @@
     //delegate
     self.gameLogicProtocol = [[BOGameLogicProtocol alloc]init];
     self.gameLogicProtocol.delegate = self;
+    
 }
 
 - (void)setUpNavigationItems {
@@ -44,8 +45,8 @@
     //UIBarButtonItem * geoButton = [[UIBarButtonItem alloc]initWithTitle:@"GEO" style:UIBarButtonItemStylePlain target:self action:@selector(showNextVC)];
     //self.navigationItem.leftBarButtonItem = geoButton;
     
-    UIBarButtonItem * nextButton = [[UIBarButtonItem alloc]initWithTitle:@"next" style:UIBarButtonItemStylePlain target:self action:@selector(fetchNewCard)];
-    self.navigationItem.rightBarButtonItem = nextButton;
+    // * nextButton = [[UIBarButtonItem alloc]initWithTitle:@"next" style:UIBarButtonItemStylePlain target:self action:@selector(fetchNewCard)];
+    //self.navigationItem.rightBarButtonItem = nextButton;
     
 }
 
@@ -378,6 +379,30 @@
 - (void)willShowCorrectAnswer {
     [self showCorrectAnswer];
 }
+
+#pragma mark - debug
+- (IBAction)nextQuestion:(id)sender {
+    [self fetchNewCard];
+}
+
+
+#pragma mark - orientation
+- (NSUInteger)supportedInterfaceOrientations{
+    [super supportedInterfaceOrientations];
+    return (UIInterfaceOrientationMaskLandscapeLeft |  UIInterfaceOrientationMaskLandscapeRight);
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    if (interfaceOrientation==UIInterfaceOrientationLandscapeLeft || interfaceOrientation==UIInterfaceOrientationLandscapeRight)
+    {
+        return YES;
+    }
+    // Return YES for supported orientations
+    return NO;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
