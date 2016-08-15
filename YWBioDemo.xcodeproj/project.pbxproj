@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0546D8351D621621007DEC2B /* 01-outer-potato-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0546D82F1D621620007DEC2B /* 01-outer-potato-01.png */; };
+		0546D8361D621621007DEC2B /* 02-central-potato-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0546D8301D621620007DEC2B /* 02-central-potato-01.png */; };
+		0546D8371D621621007DEC2B /* 03-membrane-potato-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0546D8311D621620007DEC2B /* 03-membrane-potato-01.png */; };
+		0546D8381D621621007DEC2B /* 04-protein-potato-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0546D8321D621620007DEC2B /* 04-protein-potato-01.png */; };
+		0546D8391D621621007DEC2B /* 05-dynein-potato-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0546D8331D621621007DEC2B /* 05-dynein-potato-01.png */; };
+		0546D83A1D621621007DEC2B /* 06-radial-potato-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0546D8341D621621007DEC2B /* 06-radial-potato-01.png */; };
 		056C77BD1D35951800546113 /* BOConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 056C77BC1D35951800546113 /* BOConstant.m */; };
 		05910C3D1D4AADFB00F98FFE /* BODataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05910C3C1D4AADFB00F98FFE /* BODataManager.m */; };
 		05910C401D4F9D5D00F98FFE /* BOGameLogicProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 05910C3F1D4F9D5D00F98FFE /* BOGameLogicProtocol.m */; };
@@ -86,6 +92,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0546D82F1D621620007DEC2B /* 01-outer-potato-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-outer-potato-01.png"; sourceTree = "<group>"; };
+		0546D8301D621620007DEC2B /* 02-central-potato-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-central-potato-01.png"; sourceTree = "<group>"; };
+		0546D8311D621620007DEC2B /* 03-membrane-potato-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-membrane-potato-01.png"; sourceTree = "<group>"; };
+		0546D8321D621620007DEC2B /* 04-protein-potato-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04-protein-potato-01.png"; sourceTree = "<group>"; };
+		0546D8331D621621007DEC2B /* 05-dynein-potato-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "05-dynein-potato-01.png"; sourceTree = "<group>"; };
+		0546D8341D621621007DEC2B /* 06-radial-potato-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-radial-potato-01.png"; sourceTree = "<group>"; };
 		056C77BB1D35951800546113 /* BOConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOConstant.h; sourceTree = "<group>"; };
 		056C77BC1D35951800546113 /* BOConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOConstant.m; sourceTree = "<group>"; };
 		05910C3B1D4AADFB00F98FFE /* BODataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BODataManager.h; sourceTree = "<group>"; };
@@ -294,6 +306,12 @@
 		05E9AEBD1D345494005BE216 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0546D82F1D621620007DEC2B /* 01-outer-potato-01.png */,
+				0546D8301D621620007DEC2B /* 02-central-potato-01.png */,
+				0546D8311D621620007DEC2B /* 03-membrane-potato-01.png */,
+				0546D8321D621620007DEC2B /* 04-protein-potato-01.png */,
+				0546D8331D621621007DEC2B /* 05-dynein-potato-01.png */,
+				0546D8341D621621007DEC2B /* 06-radial-potato-01.png */,
 				05E9AEBE1D3454A1005BE216 /* 01-outer-microtubule_1-highlighted.png */,
 				05E9AEBF1D3454A1005BE216 /* 01-outer-microtubule_1-normal.png */,
 				05E9AEC01D3454A1005BE216 /* 01-outer-microtubule.png */,
@@ -444,11 +462,16 @@
 				05E9AEEA1D3454A1005BE216 /* complex-normal@2x.png in Resources */,
 				05E9AE861D345116005BE216 /* LaunchScreen.storyboard in Resources */,
 				05E9AEF61D353FA9005BE216 /* US_Map_CT_test.png in Resources */,
+				0546D83A1D621621007DEC2B /* 06-radial-potato-01.png in Resources */,
 				05E9AEEE1D3454A1005BE216 /* topleft-highlighted.png in Resources */,
+				0546D8391D621621007DEC2B /* 05-dynein-potato-01.png in Resources */,
+				0546D8361D621621007DEC2B /* 02-central-potato-01.png in Resources */,
 				05E9AEE31D3454A1005BE216 /* 05-dynein-proteins.png in Resources */,
 				05E9AEED1D3454A1005BE216 /* Default@2x.png in Resources */,
+				0546D8351D621621007DEC2B /* 01-outer-potato-01.png in Resources */,
 				05E9AEE91D3454A1005BE216 /* complex-normal.png in Resources */,
 				05E9AEE61D3454A1005BE216 /* button-normal.png in Resources */,
+				0546D8371D621621007DEC2B /* 03-membrane-potato-01.png in Resources */,
 				05E9AEDA1D3454A1005BE216 /* 02-central-microtubule_1-highlighted.png in Resources */,
 				05E9AED81D3454A1005BE216 /* 01-outer-microtubule_1-normal.png in Resources */,
 				05E9AEEC1D3454A1005BE216 /* Default.png in Resources */,
@@ -468,6 +491,7 @@
 				05E9AEDB1D3454A1005BE216 /* 02-central-microtubule_1-normal.png in Resources */,
 				05E9AEF81D353FA9005BE216 /* US_Map_NY_test.png in Resources */,
 				05E9AF041D3552F2005BE216 /* CA_ShapedButton-01.png in Resources */,
+				0546D8381D621621007DEC2B /* 04-protein-potato-01.png in Resources */,
 				05E9AEE21D3454A1005BE216 /* 04-protein-cross-linking-outer-doublets.png in Resources */,
 				05E9AEF51D353FA9005BE216 /* US_Map v1-1.png in Resources */,
 				05E9AF0B1D356A64005BE216 /* AZ_shapedButton-01_hightlighted.png in Resources */,
